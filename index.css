@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border box;
+}
+.con{
+  margin: 10% 10%;
+  display: flex;
+}
+.left{
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+.right h2{
+  margin-top: 2em;
+  padding: 0px 5px;
+  color: green;
+}
+.right{
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: center;
+}
+input{
+  margin: 5px;
+  padding: 5px;
+}
+button{
+  padding: 5px;
+  background-color: green;
+  color: white;
+  margin-top: 2em;
+  border: 0px transparent;
+  width: 100%;
+}
+a{
+  color: green;
+}
+#container{
+  background-color: whitesmoke;
+  margin: 5%;
+  padding: 10px;
+}
+.last{
+  /*direction: down;*/
+  font-size: 1.2em;
+  color: Green;
+  background-color: whitesmoke;
+  margin: auto;
+}
+.first{
+  color: white;
+  font-size: 1.1em;
+  background-color: green;
+  padding: 5px 15px;
+}

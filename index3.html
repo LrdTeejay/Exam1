@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Last page</title>
+</head>
+<body>
+ <marquee behavior="alternate" direction="down" class="last">
+   <h3 id="endText">Congratulations, You have Successfully Submitted </h3>
+ </marquee>
+  <button id="large">Larger</button>
+   <button id="small">Smaller</button>
+ <script>
+   const btnLarger = document.querySelector("#large");
+   const btnSmall = document.querySelector("#small");
+   let size = 1.5;
+   let color = ["blue","red"];
+   btnLarger.addEventListener("click", function (){
+     size += .25;
+     color = ["blue", "yellow"];
+     document.getElementById("endText").style.fontSize = size + "em";
+     document.getElementById("endText").style.color = color[1];
+   });
+   btnSmall.addEventListener("click", function (){
+     size -= .25;
+     color = ["blue", "red"];
+     document.getElementById("endText").style.fontSize = size + "em";
+     document.getElementById("endText").style.color = color[1];
+   });
+ </script>
+</body>
+</html>

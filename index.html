@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Exam</title>
+</head>
+<body>
+  <marquee behavior="alternate" direction="left" class="first">Input "bukky@gmail.com" as username and 123456 as password</marquee>
+  <div class="con">
+    <div class="left">
+    <h2>Welcome Back to the NTI student portal</h2>
+    <p>By clicking sign in, You agree to National Teacher Institute Security Protocols, Please see terms and conditions.</p>
+    </div>
+    <div class="right">
+      <h2>SIGN IN</h2>
+      <form action="/index2.html">
+      <input type="text" id="usernameInput" placeholder="username" value=""> <br>
+      <input type="password" id="passwordInput" placeholder="password" value=""> <br>
+      <input type="checkbox"> Remember Me <br>
+      <button id="loginButton">Login</button>
+      </form>
+      <h4>I forgot my <a href="#">Username</a> or <a href="">Password.</a></h4>
+    </div>
+  </div>
+  <script>
+    const email = document.querySelector("#usernameInput");
+    const password = document.querySelector("#passwordInput");
+    const button = document.querySelector("#loginButton");
+    button.addEventListener("click", function(e){
+      e.preventDefault();
+      const emailValue = "bukky@gmail.com";
+      const passwordValue = "123456";
+    if(email.value === emailValue && password.value === passwordValue){
+      window.location.href = "index2.html"
+    }
+    else if(email.value == ""){
+      alert("Email is empty");
+    }
+    else if(password.value == ""){
+      alert("Password is Empty");
+    }
+    else{
+      alert("is wrong");
+    }
+    })
+ 
+  </script>
+</body>
+</html>
